@@ -32,11 +32,11 @@ function onError(msg) {
 }
 
 function hasReadPermission() {
-  window.plugins.Calendar.hasReadPermission(onSuccess);
+  window.plugins.clendar.hasReadPermission(onSuccess);
 }
 
 function requestReadPermission() {
-  window.plugins.Calendar.requestReadPermission(onSuccess);
+  window.plugins.calendar.requestReadPermission(onSuccess);
 }
 
 function hasWritePermission() {
@@ -58,7 +58,7 @@ function requestReadWritePermission() {
 function openCalendar() {
   // today + 3 days
   var d = new Date(new Date().getTime() + 3 * 24 * 60 * 60 * 1000);
-  window.plugins.Calendar.openCalendar(d, onSuccess, onError);
+  window.plugins.calendar.openCalendar(d, onSuccess, onError);
 }
 
 function listCalendars() {

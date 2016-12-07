@@ -26,7 +26,6 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
-    <gap:plugin name="org.apache.cordova.calendar" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -49,4 +48,5 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <preference name="android-build-tool" value="gradle" />
 </widget>
